@@ -1,0 +1,9 @@
+NPP_SAVE
+"D:\tools\autohotkey2\AutoHotkey64.exe" "$(FULL_CURRENT_PATH)"
+IF $(EXITCODE) == 0 GOTO SUC
+ECHO Failed.
+GOTO END
+:SUC
+ECHO Done.
+GOTO END
+:END

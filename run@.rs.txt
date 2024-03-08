@@ -1,0 +1,10 @@
+NPP_SAVE
+cd $(current_directory)
+cargo run
+IF $(EXITCODE) == 0 GOTO SUC
+ECHO Failed.
+GOTO END
+:SUC
+ECHO Done.
+GOTO END
+:END
